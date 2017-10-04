@@ -14,8 +14,7 @@ namespace Testing_Logfiles
         public string Alarm { get; set; }
         public string Navn { get; set; }
         public string Afdeling { get; set; }
-        public string Bolig { get; set; }
-   
+        public string Bolig { get; set; }   
         public string Afmeldt { get; set; }
         public string Personale { get; set; }
      
@@ -27,18 +26,16 @@ namespace Testing_Logfiles
             this.Alarm = alarm;
             this.Navn = navn;
             this.Afdeling = afdeling;
-            this.Bolig = bolig;
-            
+            this.Bolig = bolig;            
             this.Afmeldt = afmeldt;
-            this.Personale = personale;
-       
+            this.Personale = personale;       
         }
 
 
 
         public override string ToString()
         {
-            return ID.ToString() + "  " + Tid.ToString()+ "  " + Navn.ToString() + "  " + Afdeling.ToString()+ "  "+ Afdeling.ToString() ;
+            return ID.ToString() + "  " + Tid.ToString()+ "  " + Navn.ToString() + "  " + Alarm.ToString()+ "  "+ Afdeling.ToString() ;
         }
 
 
